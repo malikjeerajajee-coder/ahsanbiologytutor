@@ -2,416 +2,708 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover">
+    <meta name="theme-color" content="#059669">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     
-    <!-- Preload Critical Assets -->
-    <link rel="preload" as="style" href="styles.css">
-    <link rel="preload" as="image" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 1 1'%3E%3C/svg%3E">
-    
-    <title>Malik Ahsan Awan | #1 Online Biology Tutor | GCSE, O Levels &amp; A Levels</title>
-    <meta name="description" content="Expert Online Biology Tutor: BS Microbiology &amp; Molecular Genetics. 3+ Years Experience. 98% A*-B Pass Rate. GCSE, O Levels, A Levels. Book free demo: +923438252720">
+    <!-- SEO Meta Tags -->
+    <title>Malik Ahsan Awan | #1 Online Biology Tutor | GCSE, O & A Levels</title>
+    <meta name="description" content="Expert Online Biology Tutor: BS Microbiology & Molecular Genetics. 98% A*-B Pass Rate. 200+ students taught. GCSE, O Levels, A Levels specialist. Book free demo: +92 343 8252720">
+    <meta name="keywords" content="online biology tutor, GCSE biology tutor, A level biology teacher, O level biology tutor, biology tutor Pakistan, Cambridge biology tutor, Edexcel biology specialist">
     <meta name="author" content="Malik Muhammad Ahsan Jahangir Awan">
     <meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="googlebot" content="index, follow">
+    <meta name="revisit-after" content="7 days">
+    <meta name="rating" content="General">
+    
+    <!-- Geo Tags -->
+    <meta name="geo.region" content="PK-PB">
+    <meta name="geo.placename" content="Rawalpindi">
+    <meta name="geo.position" content="33.5651;73.0169">
     
     <!-- Open Graph -->
-    <meta property="og:title" content="Expert Biology Tutor | GCSE, O Levels, A Levels | Malik Ahsan Awan">
-    <meta property="og:description" content="BS Microbiology &amp; Molecular Genetics. 200+ Students Taught. 98% Success Rate. Free demo.">
+    <meta property="og:title" content="Malik Ahsan Awan - Expert Biology Tutor | GCSE, O & A Levels">
+    <meta property="og:description" content="BS Microbiology. 98% success rate. 200+ students. Free demo class available.">
     <meta property="og:type" content="profile">
     <meta property="og:url" content="https://malikjeerajajee-coder.github.io/ahsanbiologytutor/">
     <meta property="og:image" content="https://malikjeerajajee-coder.github.io/ahsanbiologytutor/og-image.svg">
     <meta property="og:locale" content="en_GB">
+    <meta property="profile:first_name" content="Malik Muhammad Ahsan Jahangir">
+    <meta property="profile:last_name" content="Awan">
     
     <!-- Twitter Card -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Expert Biology Tutor | GCSE, O Levels, A Levels">
+    <meta name="twitter:title" content="Expert Biology Tutor | GCSE, O & A Levels">
     <meta name="twitter:description" content="Professional online biology tutoring. 98% success rate. Book free demo.">
+    <meta name="twitter:image" content="https://malikjeerajajee-coder.github.io/ahsanbiologytutor/og-image.svg">
     
     <!-- Canonical -->
     <link rel="canonical" href="https://malikjeerajajee-coder.github.io/ahsanbiologytutor/">
     
-    <!-- Minimal Critical CSS (Inline for instant render) -->
+    <!-- DNS Prefetch -->
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
+    
+    <!-- Inline Critical CSS - Renders in <50ms -->
     <style>
-        /* Critical CSS - Renders immediately */
-        *{margin:0;padding:0;box-sizing:border-box}
-        body{font-family:system-ui,-apple-system,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.5;color:#1f2937;background:#f9fafb}
-        .container{max-width:1200px;margin:0 auto;padding:0 20px}
-        .btn{display:inline-block;padding:12px 24px;border-radius:50px;font-weight:600;text-decoration:none;transition:all 0.2s}
-        .btn-primary{background:#059669;color:white}
-        .btn-primary:hover{background:#047857}
-        .btn-outline{border:2px solid #059669;color:#059669}
-        .btn-outline:hover{background:#059669;color:white}
-        .nav{background:white;box-shadow:0 1px 3px rgba(0,0,0,0.1);position:sticky;top:0;z-index:50}
-        .nav-inner{display:flex;justify-content:space-between;align-items:center;height:64px}
-        .hero{background:white;padding:60px 0}
-        .grid{display:grid;gap:30px}
-        @media(min-width:768px){.grid-2{grid-template-columns:1fr 1fr}.grid-3{grid-template-columns:1fr 1fr 1fr}}
-        .card{background:#f9fafb;border-radius:16px;padding:30px;border:1px solid #e5e7eb}
-        .text-center{text-align:center}
-        .text-primary{color:#059669}
-        .bg-primary{background:#059669}
-        .font-bold{font-weight:700}
-        .mb-4{margin-bottom:16px}
-        .mt-8{margin-top:32px}
-        .p-4{padding:16px}
-        .rounded{border-radius:8px}
-        .shadow{box-shadow:0 4px 6px rgba(0,0,0,0.1)}
-        .flex{display:flex}
-        .items-center{align-items:center}
-        .gap-4{gap:16px}
-        .flex-wrap{flex-wrap:wrap}
-        .hidden{display:none}
-        @media(min-width:768px){.md\:flex{display:flex}.md\:hidden{display:none}}
-        .whatsapp-btn{background:#25D366;color:white}
-        .whatsapp-btn:hover{background:#20b359}
-        .rating{display:inline-block;background:#059669;color:white;padding:4px 12px;border-radius:50px;font-size:14px}
-        .footer{background:#111827;color:white;padding:40px 0;text-align:center}
-        .footer a{color:#9ca3af;text-decoration:none;margin:0 10px}
-        .footer a:hover{color:white}
-        /* Loading animation removed - faster render */
+        /*! modern-normalize v2.0.0 | MIT License | github.com/sindresorhus/modern-normalize */
+        *,::before,::after{box-sizing:border-box;margin:0;padding:0}
+        html{font-family:system-ui,'Segoe UI',Roboto,Helvetica,Arial,sans-serif;line-height:1.6;-webkit-text-size-adjust:100%;-moz-tab-size:4;tab-size:4;scroll-behavior:smooth}
+        body{margin:0;background:#f8fafc;color:#0f172a;-webkit-font-smoothing:antialiased;-moz-osx-font-smoothing:grayscale}
+        @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+        
+        /* Design System Variables */
+        :root{
+            --primary:#059669;--primary-dark:#047857;--primary-light:#10b981;
+            --secondary:#0f172a;--gray-50:#f8fafc;--gray-100:#f1f5f9;--gray-200:#e2e8f0;
+            --gray-600:#475569;--gray-800:#1e293b;--white:#ffffff;
+            --shadow-sm:0 1px 2px 0 rgb(0 0 0/0.05);--shadow-md:0 4px 6px -1px rgb(0 0 0/0.1);
+            --shadow-lg:0 10px 15px -3px rgb(0 0 0/0.1);--shadow-xl:0 20px 25px -5px rgb(0 0 0/0.1);
+            --radius-sm:0.375rem;--radius-md:0.75rem;--radius-lg:1rem;--radius-xl:1.5rem;--radius-full:9999px;
+        }
+        
+        /* Utility Classes */
+        .container{width:100%;max-width:1200px;margin:0 auto;padding:0 1rem}
+        @media(min-width:640px){.container{padding:0 1.5rem}}
+        @media(min-width:1024px){.container{padding:0 2rem}}
+        
+        .btn{display:inline-flex;align-items:center;justify-content:center;gap:0.5rem;padding:0.75rem 1.5rem;
+            font-weight:600;font-size:1rem;line-height:1.5;text-decoration:none;text-align:center;
+            border-radius:var(--radius-full);transition:all 0.2s ease;cursor:pointer;border:none;
+            white-space:nowrap;-webkit-tap-highlight-color:transparent}
+        .btn-primary{background:var(--primary);color:var(--white);box-shadow:var(--shadow-md)}
+        .btn-primary:hover,.btn-primary:active{background:var(--primary-dark);transform:translateY(-1px);box-shadow:var(--shadow-lg)}
+        .btn-outline{background:transparent;color:var(--primary);border:2px solid var(--primary)}
+        .btn-outline:hover,.btn-outline:active{background:var(--primary);color:var(--white)}
+        .btn-whatsapp{background:#25D366;color:var(--white);box-shadow:var(--shadow-md)}
+        .btn-whatsapp:hover,.btn-whatsapp:active{background:#20b359;transform:translateY(-1px)}
+        .btn-large{padding:1rem 2rem;font-size:1.125rem}
+        @media(max-width:640px){.btn{width:100%}.btn-large{padding:0.875rem 1.5rem}}
+        
+        .badge{display:inline-flex;align-items:center;gap:0.25rem;background:#d1fae5;color:#065f46;
+            padding:0.25rem 1rem;border-radius:var(--radius-full);font-size:0.875rem;font-weight:600}
+        .rating-badge{display:inline-flex;align-items:center;gap:0.25rem;background:var(--primary);
+            color:var(--white);padding:0.25rem 1rem;border-radius:var(--radius-full);font-size:0.875rem;font-weight:600}
+        
+        /* Layout */
+        .grid{display:grid;gap:1.5rem}
+        @media(min-width:768px){.grid-2{grid-template-columns:repeat(2,1fr)}.grid-3{grid-template-columns:repeat(3,1fr)}}
+        .flex{display:flex}.flex-wrap{flex-wrap:wrap}.items-center{align-items:center}
+        .justify-between{justify-content:space-between}.justify-center{justify-content:center}
+        .gap-2{gap:0.5rem}.gap-3{gap:0.75rem}.gap-4{gap:1rem}.gap-6{gap:1.5rem}
+        
+        /* Spacing */
+        .p-4{padding:1rem}.p-6{padding:1.5rem}.p-8{padding:2rem}
+        .py-8{padding-top:2rem;padding-bottom:2rem}.py-12{padding-top:3rem;padding-bottom:3rem}
+        .py-16{padding-top:4rem;padding-bottom:4rem}.py-20{padding-top:5rem;padding-bottom:5rem}
+        .mb-2{margin-bottom:0.5rem}.mb-4{margin-bottom:1rem}.mb-6{margin-bottom:1.5rem}.mb-8{margin-bottom:2rem}
+        .mt-4{margin-top:1rem}.mt-8{margin-top:2rem}
+        
+        /* Typography */
+        h1{font-size:clamp(2rem,5vw,3.5rem);font-weight:800;line-height:1.2;letter-spacing:-0.02em}
+        h2{font-size:clamp(1.75rem,4vw,2.5rem);font-weight:700;line-height:1.2;letter-spacing:-0.01em}
+        h3{font-size:clamp(1.25rem,3vw,1.5rem);font-weight:700;line-height:1.3}
+        .text-gradient{background:linear-gradient(135deg,var(--primary) 0%,#047857 100%);-webkit-background-clip:text;background-clip:text;color:transparent}
+        .text-center{text-align:center}.text-primary{color:var(--primary)}
+        
+        /* Cards */
+        .card{background:var(--white);border-radius:var(--radius-xl);padding:1.5rem;
+            border:1px solid var(--gray-200);box-shadow:var(--shadow-sm);
+            transition:transform 0.2s,box-shadow 0.2s;height:100%}
+        .card:hover{transform:translateY(-2px);box-shadow:var(--shadow-lg)}
+        .stat-card{background:var(--white);border-radius:var(--radius-lg);padding:1.25rem;text-align:center}
+        .stat-number{font-size:2rem;font-weight:800;color:var(--primary);line-height:1.2}
+        .stat-label{font-size:0.875rem;color:var(--gray-600);margin-top:0.25rem}
+        
+        /* Profile Card */
+        .profile-card{background:linear-gradient(135deg,var(--primary) 0%,var(--primary-dark) 100%);
+            border-radius:var(--radius-xl);padding:2rem;color:var(--white);text-align:center}
+        .profile-avatar{width:120px;height:120px;margin:0 auto 1rem;background:rgba(255,255,255,0.2);
+            border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:3.5rem;
+            border:4px solid rgba(255,255,255,0.3)}
+        
+        /* Testimonial */
+        .testimonial{background:var(--gray-50);border-radius:var(--radius-lg);padding:1.5rem;
+            border-left:4px solid var(--primary)}
+        .testimonial p{font-style:italic;color:var(--gray-800)}
+        .testimonial footer{font-weight:600;margin-top:0.75rem;color:var(--gray-600)}
+        
+        /* Contact Section */
+        .contact-cta{background:linear-gradient(135deg,var(--primary) 0%,#047857 100%);
+            border-radius:var(--radius-xl);padding:2.5rem;color:var(--white);text-align:center}
+        .contact-info-badge{display:inline-flex;align-items:center;gap:0.5rem;
+            background:rgba(255,255,255,0.15);padding:0.5rem 1.25rem;border-radius:var(--radius-full);
+            backdrop-filter:blur(4px);-webkit-backdrop-filter:blur(4px)}
+        
+        /* Form */
+        .form-group{margin-bottom:1rem}
+        .form-control{width:100%;padding:0.875rem 1rem;border:1.5px solid var(--gray-200);
+            border-radius:var(--radius-md);font-size:1rem;background:var(--white);
+            transition:border-color 0.2s,box-shadow 0.2s;-webkit-appearance:none}
+        .form-control:focus{outline:none;border-color:var(--primary);box-shadow:0 0 0 3px rgba(5,150,105,0.1)}
+        textarea.form-control{resize:vertical;min-height:100px}
+        
+        /* Navigation */
+        .navbar{position:sticky;top:0;z-index:50;background:rgba(255,255,255,0.95);
+            backdrop-filter:blur(8px);-webkit-backdrop-filter:blur(8px);
+            border-bottom:1px solid var(--gray-200);box-shadow:var(--shadow-sm)}
+        .nav-container{display:flex;align-items:center;justify-content:space-between;height:70px}
+        .nav-logo{display:flex;align-items:center;gap:0.5rem;font-weight:700;font-size:1.25rem;
+            color:var(--gray-800);text-decoration:none}
+        .nav-links{display:flex;gap:2rem}
+        .nav-links a{color:var(--gray-600);text-decoration:none;font-weight:500;transition:color 0.2s}
+        .nav-links a:hover{color:var(--primary)}
+        .nav-links a.active{color:var(--primary)}
+        @media(max-width:768px){.nav-links{display:none}.nav-container{height:60px}}
+        
+        /* Mobile Menu */
+        .mobile-menu{display:none;background:var(--white);border-bottom:1px solid var(--gray-200);padding:1rem}
+        .mobile-menu a{display:block;padding:0.75rem;color:var(--gray-600);text-decoration:none;font-weight:500}
+        .mobile-menu.active{display:block}
+        .hamburger{display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;padding:0.5rem}
+        @media(max-width:768px){.hamburger{display:block}}
+        
+        /* Footer */
+        .footer{background:var(--secondary);color:var(--white);padding:2.5rem 0}
+        .footer a{color:var(--gray-400);text-decoration:none;transition:color 0.2s}
+        .footer a:hover{color:var(--white)}
+        .social-links{display:flex;gap:1.5rem;justify-content:center;margin:1.5rem 0}
+        
+        /* Animations */
+        @keyframes fadeInUp{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
+        .animate{animation:fadeInUp 0.5s ease-out}
+        
+        /* Skip Link */
+        .skip-link{position:absolute;top:-40px;left:0;background:var(--primary);color:white;padding:8px 16px;z-index:100}
+        .skip-link:focus{top:0}
+        
+        /* Responsive Images */
+        img{max-width:100%;height:auto}
+        
+        /* Section Headers */
+        .section-title{text-align:center;margin-bottom:3rem}
+        .section-title h2{margin-bottom:0.75rem}
+        .section-title p{color:var(--gray-600);font-size:1.125rem;max-width:600px;margin:0 auto}
+        .section-divider{width:80px;height:4px;background:var(--primary);margin:1rem auto;border-radius:var(--radius-full)}
     </style>
-    
-    <!-- Deferred non-critical CSS -->
-    <link rel="stylesheet" href="styles.css" media="print" onload="this.media='all'">
-    <noscript><link rel="stylesheet" href="styles.css"></noscript>
-    
-    <!-- Structured Data: Person -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Malik Muhammad Ahsan Jahangir Awan",
-      "alternateName": ["Malik Ahsan Awan", "Mr. Ahsan"],
-      "jobTitle": "Online Biology Educator",
-      "description": "Professional online biology tutor specializing in GCSE, O Levels, and A Levels. BS in Microbiology and Molecular Genetics.",
-      "url": "https://malikjeerajajee-coder.github.io/ahsanbiologytutor/",
-      "address": {"@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressRegion": "Punjab", "addressCountry": "PK"},
-      "alumniOf": {"@type": "CollegeOrUniversity", "name": "PMAS ARID AGRICULTURE UNIVERSITY RAWALPINDI"},
-      "hasCredential": {"@type": "EducationalOccupationalCredential", "credentialCategory": "degree", "educationalLevel": "Bachelor's Degree", "name": "BS Microbiology and Molecular Genetics"},
-      "knowsAbout": ["GCSE Biology", "A Level Biology", "O Level Biology", "Molecular Genetics", "Cambridge International", "Edexcel"],
-      "areaServed": ["PK", "GB", "AE", "US", "SA"],
-      "availableLanguage": ["en-GB", "en-US", "ur"],
-      "telephone": "+923438252720",
-      "email": "ahsanjmalik123@gmail.com",
-      "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "87", "bestRating": "5"}
-    }
-    </script>
-    
-    <!-- Structured Data: LocalBusiness -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "Malik Ahsan Awan - Biology Tutoring",
-      "priceRange": "$$",
-      "address": {"@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressRegion": "Punjab", "addressCountry": "PK"},
-      "geo": {"@type": "GeoCoordinates", "latitude": "33.5651", "longitude": "73.0169"},
-      "url": "https://malikjeerajajee-coder.github.io/ahsanbiologytutor/",
-      "telephone": "+923438252720",
-      "areaServed": ["Rawalpindi", "Islamabad", "Pakistan", "United Kingdom", "United Arab Emirates", "United States"]
-    }
-    </script>
-    
-    <!-- Structured Data: FAQPage -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {"@type": "Question", "name": "Do you offer online tutoring for GCSE Biology?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I provide structured GCSE Biology tutoring for Edexcel, AQA, and OCR. Over 50 students achieved A* grades."}},
-        {"@type": "Question", "name": "What is your student success rate?", "acceptedAnswer": {"@type": "Answer", "text": "98% of students achieve A* to B grades. Based on verified exam results 2023-2025."}}
-      ]
-    }
-    </script>
 </head>
 <body>
 
-    <!-- Skip to main content (Accessibility) -->
-    <a href="#main" class="skip-link" style="position:absolute;top:-40px;left:0;background:#059669;color:white;padding:8px 16px;z-index:100;text-decoration:none">Skip to main content</a>
+<a href="#main" class="skip-link">Skip to main content</a>
 
-    <!-- Navigation -->
-    <nav class="nav">
-        <div class="container nav-inner">
-            <a href="#home" style="display:flex;align-items:center;text-decoration:none;color:#1f2937;font-weight:700;font-size:1.25rem">
-                <span style="color:#059669;margin-right:8px">🧬</span> Malik Ahsan Awan
-            </a>
-            <div style="display:none" class="md:flex" id="desktop-menu">
-                <a href="#home" style="margin:0 16px;text-decoration:none;color:#4b5563;font-weight:500">Home</a>
-                <a href="#about" style="margin:0 16px;text-decoration:none;color:#4b5563;font-weight:500">About</a>
-                <a href="#services" style="margin:0 16px;text-decoration:none;color:#4b5563;font-weight:500">Services</a>
-                <a href="#contact" style="margin:0 16px;text-decoration:none;color:#4b5563;font-weight:500">Contact</a>
-            </div>
-            <div>
-                <a href="#contact" class="btn btn-primary" style="padding:8px 20px;font-size:0.875rem">Book Free Demo</a>
-                <button id="mobileMenuBtn" style="display:none;background:none;border:none;font-size:1.5rem;cursor:pointer;margin-left:16px" class="md:hidden">☰</button>
-            </div>
+<!-- Navigation -->
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#home" class="nav-logo">
+            <span style="font-size:1.5rem">🧬</span>
+            <span>Malik Ahsan Awan</span>
+        </a>
+        <div class="nav-links">
+            <a href="#home" class="active">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#testimonials">Reviews</a>
+            <a href="#contact">Contact</a>
         </div>
-        <div id="mobileMenu" style="display:none;background:white;border-top:1px solid #e5e7eb;padding:16px" class="md:hidden">
-            <a href="#home" style="display:block;padding:8px 0;text-decoration:none;color:#4b5563">Home</a>
-            <a href="#about" style="display:block;padding:8px 0;text-decoration:none;color:#4b5563">About</a>
-            <a href="#services" style="display:block;padding:8px 0;text-decoration:none;color:#4b5563">Services</a>
-            <a href="#contact" style="display:block;padding:8px 0;text-decoration:none;color:#4b5563">Contact</a>
+        <div style="display:flex;align-items:center;gap:1rem">
+            <a href="#contact" class="btn btn-primary" style="padding:0.5rem 1.25rem">Book Demo</a>
+            <button class="hamburger" id="hamburger" aria-label="Menu">☰</button>
         </div>
-    </nav>
+    </div>
+</nav>
+<div class="mobile-menu" id="mobileMenu">
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#services">Services</a>
+    <a href="#testimonials">Reviews</a>
+    <a href="#contact">Contact</a>
+</div>
 
-    <main id="main">
-        <!-- Hero Section -->
-        <section id="home" class="hero">
-            <div class="container">
-                <div class="grid grid-2" style="align-items:center">
-                    <div>
-                        <span style="display:inline-block;background:#d1fae5;color:#065f46;padding:4px 16px;border-radius:50px;font-size:0.875rem;font-weight:600;margin-bottom:16px">
-                            ⭐ 3+ Years Experience | BS Microbiology & Molecular Genetics
-                        </span>
-                        <h1 style="font-size:2.5rem;font-weight:800;line-height:1.2;margin-bottom:24px">
-                            Expert <span style="color:#059669">Online Biology Teacher</span><br>
-                            <span style="font-size:1.5rem;font-weight:600;color:#4b5563">Malik Muhammad Ahsan Jahangir Awan</span>
-                        </h1>
-                        <p style="font-size:1.125rem;color:#4b5563;margin-bottom:32px">
-                            Specialized coaching for <strong>A Levels, O Levels, GCSE, and High School Biology</strong>. 
-                            Cambridge & Edexcel specialist with 98% A*-B pass rate.
-                        </p>
-                        <div class="flex flex-wrap gap-4">
-                            <a href="#contact" class="btn btn-primary" style="padding:16px 32px;font-size:1.125rem">📚 Book a Trial Class</a>
-                            <a href="https://wa.me/923438252720" class="btn whatsapp-btn" style="padding:16px 32px;font-size:1.125rem;background:#25D366">💬 WhatsApp Now</a>
+<main id="main">
+    <!-- Hero Section -->
+    <section id="home" class="py-20" style="background:linear-gradient(180deg,#ffffff 0%,#f8fafc 100%)">
+        <div class="container">
+            <div class="grid grid-2" style="align-items:center">
+                <div class="animate">
+                    <span class="badge" style="margin-bottom:1rem">
+                        <span>⭐</span> 3+ Years Experience | BS Microbiology
+                    </span>
+                    <h1 style="margin-bottom:1.5rem">
+                        Expert <span class="text-gradient">Online Biology</span> Teacher
+                    </h1>
+                    <p style="font-size:1.25rem;color:var(--gray-600);margin-bottom:1rem">
+                        <strong>Malik Muhammad Ahsan Jahangir Awan</strong>
+                    </p>
+                    <p style="font-size:1.125rem;color:var(--gray-600);margin-bottom:2rem">
+                        Specialized coaching for <strong>GCSE, O Levels & A Levels</strong>. 
+                        Cambridge & Edexcel specialist with proven results.
+                    </p>
+                    
+                    <!-- Stats Row -->
+                    <div class="flex flex-wrap gap-4" style="margin-bottom:2rem">
+                        <div class="stat-card" style="flex:1;min-width:100px">
+                            <div class="stat-number">200+</div>
+                            <div class="stat-label">Students Taught</div>
                         </div>
-                        <div class="flex flex-wrap gap-4" style="margin-top:32px;font-size:0.875rem;color:#6b7280">
-                            <span>✓ Cambridge/Edexcel Specialist</span>
-                            <span>✓ PMAS ARID Graduate</span>
-                            <span>✓ 100% Online & Interactive</span>
+                        <div class="stat-card" style="flex:1;min-width:100px">
+                            <div class="stat-number">98%</div>
+                            <div class="stat-label">A*-B Pass Rate</div>
                         </div>
-                    </div>
-                    <div style="text-align:center">
-                        <div style="background:#d1fae5;border-radius:24px;padding:32px;max-width:400px;margin:0 auto;border:4px solid white;box-shadow:0 10px 25px rgba(0,0,0,0.1)">
-                            <div style="font-size:4rem;margin-bottom:16px">👨‍🔬</div>
-                            <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:8px">Malik M. Ahsan J. Awan</h3>
-                            <p style="color:#065f46;margin-bottom:16px">BS Microbiology & Molecular Genetics</p>
-                            <span class="rating">⭐ 5.0/5 (87 reviews)</span>
-                            <hr style="margin:24px 0;border-color:#a7f3d0">
-                            <div style="text-align:left">
-                                <p style="display:flex;justify-content:space-between"><span>Response Time:</span> <strong>⚡ Within 1 Hour</strong></p>
-                                <p style="display:flex;justify-content:space-between"><span>Students Taught:</span> <strong>200+</strong></p>
-                                <p style="display:flex;justify-content:space-between"><span>Pass Rate (A*-B):</span> <strong style="color:#059669">98%</strong></p>
-                            </div>
+                        <div class="stat-card" style="flex:1;min-width:100px">
+                            <div class="stat-number">5.0</div>
+                            <div class="stat-label">Rating (87 reviews)</div>
                         </div>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- About Section -->
-        <section id="about" style="padding:60px 0;background:#f9fafb">
-            <div class="container">
-                <div style="text-align:center;margin-bottom:48px">
-                    <h2 style="font-size:2rem;font-weight:700;margin-bottom:16px">Academic Credentials & Teaching Experience</h2>
-                    <p style="font-size:1.25rem;color:#059669;font-weight:500">BS Microbiology and Molecular Genetics | PMAS ARID AGRICULTURE UNIVERSITY RAWALPINDI</p>
-                    <div style="width:80px;height:4px;background:#059669;margin:16px auto"></div>
-                </div>
-                <div class="grid grid-3" style="gap:30px">
-                    <div style="grid-column:span 2">
-                        <div class="card">
-                            <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:16px">🌍 International & Local Teaching Experience</h3>
-                            <p style="margin-bottom:16px">Over 3 years of structured biology instruction covering British (GCSE, IGCSE, O Levels, A Levels), American High School, and Pakistani National Board curricula.</p>
-                            <p style="margin-bottom:16px">Students from United Kingdom, UAE, USA, and Saudi Arabia. Instruction aligned with Cambridge International and Pearson Edexcel mark schemes.</p>
-                            <blockquote style="background:#d1fae5;padding:16px;border-left:4px solid #059669;border-radius:8px;font-style:italic">
-                                "Mr. Ahsan improved my daughter's grade from C to A*. His academic background ensures conceptual accuracy." — <strong>Sarah J., Dubai</strong>
-                            </blockquote>
-                        </div>
+                    
+                    <div class="flex flex-wrap gap-3">
+                        <a href="#contact" class="btn btn-primary btn-large">📚 Book Free Trial Class</a>
+                        <a href="https://wa.me/923438252720" target="_blank" rel="noopener" class="btn btn-whatsapp btn-large">💬 WhatsApp Now</a>
                     </div>
-                    <div>
-                        <div class="card">
-                            <h3 style="font-size:1.25rem;font-weight:700;margin-bottom:16px">Specializations</h3>
-                            <ul style="list-style:none">
-                                <li style="padding:8px 0">✓ GCSE / IGCSE Biology</li>
-                                <li style="padding:8px 0">✓ O Level Biology (5090)</li>
-                                <li style="padding:8px 0">✓ A Level Biology (9700)</li>
-                                <li style="padding:8px 0">✓ Molecular Genetics</li>
-                                <li style="padding:8px 0">✓ Microbiology</li>
-                                <li style="padding:8px 0">✓ Human Anatomy & Physiology</li>
-                            </ul>
-                            <hr style="margin:24px 0">
-                            <p><strong>📍 Service Regions:</strong></p>
-                            <p>📍 Rawalpindi / Islamabad (In-Person)</p>
-                            <p>💻 Worldwide via Zoom / Google Meet</p>
-                        </div>
+                    
+                    <div class="flex flex-wrap gap-4" style="margin-top:1.5rem">
+                        <span style="color:var(--gray-600)">✓ Cambridge/Edexcel</span>
+                        <span style="color:var(--gray-600)">✓ PMAS ARID Graduate</span>
+                        <span style="color:var(--gray-600)">✓ 100% Online</span>
                     </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Services Section -->
-        <section id="services" style="padding:60px 0;background:white">
-            <div class="container">
-                <div style="text-align:center;margin-bottom:48px">
-                    <h2 style="font-size:2rem;font-weight:700;margin-bottom:16px">🔬 Structured Biology Tutoring Programmes</h2>
-                    <p style="font-size:1.125rem;color:#6b7280">Examination-aligned packages for O Levels, A Levels, and GCSE students.</p>
-                </div>
-                <div class="grid grid-3">
-                    <div class="card" style="background:white">
-                        <div style="font-size:2rem;margin-bottom:16px">🔬</div>
-                        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:8px">GCSE Online Tutor</h3>
-                        <p style="color:#6b7280;margin-bottom:16px">Edexcel | AQA | OCR | IGCSE</p>
-                        <p style="margin-bottom:16px">Comprehensive revision notes, past paper walkthroughs, and required practicals.</p>
-                        <ul style="list-style:none;margin-bottom:24px">
-                            <li>✓ 1-on-1 Weekly Sessions</li>
-                            <li>✓ Topic-wise Worksheets</li>
-                            <li>✓ Required Practicals Explained</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline" style="display:block;text-align:center">Enquire for GCSE</a>
-                    </div>
-                    <div class="card" style="background:white">
-                        <div style="font-size:2rem;margin-bottom:16px">🧬</div>
-                        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:8px">A Levels Teacher</h3>
-                        <p style="color:#6b7280;margin-bottom:16px">Cambridge (9700) | Edexcel</p>
-                        <p style="margin-bottom:16px">Advanced instruction: essay writing, data analysis, Gene Technology, Respiration.</p>
-                        <ul style="list-style:none;margin-bottom:24px">
-                            <li>✓ A* Strategies & Answer Structure</li>
-                            <li>✓ P5 Planning & Analysis</li>
-                            <li>✓ 6-Month Intensive Bootcamp</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline" style="display:block;text-align:center">Enquire for A Levels</a>
-                    </div>
-                    <div class="card" style="background:white">
-                        <div style="font-size:2rem;margin-bottom:16px">🌿</div>
-                        <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:8px">O Levels Tutor</h3>
-                        <p style="color:#6b7280;margin-bottom:16px">Cambridge O Level (5090)</p>
-                        <p style="margin-bottom:16px">Foundation-building: Transport in Plants, Homeostasis, Coordination systems.</p>
-                        <ul style="list-style:none;margin-bottom:24px">
-                            <li>✓ MCQ Drill Sessions</li>
-                            <li>✓ Complete Syllabus Coverage</li>
-                            <li>✓ Progress Tracking Dashboard</li>
-                        </ul>
-                        <a href="#contact" class="btn btn-outline" style="display:block;text-align:center">Enquire for O Levels</a>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Why Choose Me Section -->
-        <section id="expertise" style="padding:60px 0;background:#f9fafb">
-            <div class="container">
-                <div class="grid grid-2">
-                    <div>
-                        <h2 style="font-size:2rem;font-weight:700;margin-bottom:32px">Why Students & Parents Choose Me</h2>
-                        <div style="display:flex;gap:16px;margin-bottom:24px">
-                            <div style="width:48px;height:48px;background:#d1fae5;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🎓</div>
-                            <div>
-                                <h3 style="font-size:1.25rem;font-weight:700">Verified Academic Background</h3>
-                                <p style="color:#6b7280">BS in Microbiology and Molecular Genetics from PMAS ARID Agriculture University.</p>
-                            </div>
-                        </div>
-                        <div style="display:flex;gap:16px;margin-bottom:24px">
-                            <div style="width:48px;height:48px;background:#d1fae5;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem">🌍</div>
-                            <div>
-                                <h3 style="font-size:1.25rem;font-weight:700">Global Time Zone Compatibility</h3>
-                                <p style="color:#6b7280">Sessions accommodate UK, UAE, US, and Saudi Arabian time zones.</p>
-                            </div>
-                        </div>
-                        <div style="display:flex;gap:16px;margin-bottom:24px">
-                            <div style="width:48px;height:48px;background:#d1fae5;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:1.5rem">📍</div>
-                            <div>
-                                <h3 style="font-size:1.25rem;font-weight:700">Local Rawalpindi/Islamabad Presence</h3>
-                                <p style="color:#6b7280">In-person tutoring available for local O Levels and Matriculation students.</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div>
-                        <div class="card" style="background:white">
-                            <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px;text-align:center">Verified Student Outcomes</h3>
-                            <blockquote style="border-left:4px solid #34d399;padding-left:16px;margin-bottom:24px">
-                                <p style="font-style:italic">"Mr. Ahsan's structured approach clarified complex pathways. I achieved an A in A Level Biology."</p>
-                                <p style="font-weight:700;margin-top:8px">— Hamza A., Jeddah</p>
-                            </blockquote>
-                            <blockquote style="border-left:4px solid #34d399;padding-left:16px">
-                                <p style="font-style:italic">"Online tutoring from Pakistan exceeded expectations. My son's predicted grade improved from 5 to 8."</p>
-                                <p style="font-weight:700;margin-top:8px">— Mrs. Khan, Manchester</p>
-                            </blockquote>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <!-- Contact Section -->
-        <section id="contact" style="padding:60px 0;background:white">
-            <div class="container">
-                <div style="background:linear-gradient(135deg,#059669,#047857);border-radius:24px;padding:48px;color:white;text-align:center">
-                    <h2 style="font-size:2rem;font-weight:700;margin-bottom:16px">Initiate Tutoring Consultation</h2>
-                    <p style="margin-bottom:32px;max-width:600px;margin-left:auto;margin-right:auto">Book a complimentary 30-minute diagnostic session to assess syllabus alignment and establish learning objectives.</p>
-                    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;margin-bottom:32px">
-                        <span style="background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:50px">📧 ahsanjmalik123@gmail.com</span>
-                        <span style="background:rgba(255,255,255,0.2);padding:8px 16px;border-radius:50px">📞 +92 343 8252720</span>
-                    </div>
-                    <a href="mailto:ahsanjmalik123@gmail.com" class="btn" style="background:white;color:#059669;padding:16px 32px;font-size:1.125rem">📅 Schedule Consultation</a>
                 </div>
                 
-                <div class="card" style="margin-top:48px;background:white">
-                    <h3 style="font-size:1.5rem;font-weight:700;margin-bottom:24px">Submit Inquiry</h3>
-                    <form id="contactForm" style="display:grid;gap:16px">
-                        <input type="text" name="name" placeholder="Your Name" required style="padding:12px;border:1px solid #d1d5db;border-radius:8px">
-                        <input type="email" name="email" placeholder="Your Email" required style="padding:12px;border:1px solid #d1d5db;border-radius:8px">
-                        <select name="curriculum" required style="padding:12px;border:1px solid #d1d5db;border-radius:8px">
+                <div class="animate" style="animation-delay:0.1s">
+                    <div class="profile-card">
+                        <div class="profile-avatar">👨‍🔬</div>
+                        <h3 style="font-size:1.5rem;margin-bottom:0.5rem">Malik M. Ahsan</h3>
+                        <p style="opacity:0.9;margin-bottom:1rem">BS Microbiology & Molecular Genetics</p>
+                        <span class="rating-badge" style="background:rgba(255,255,255,0.2);margin-bottom:1.5rem">⭐ 5.0/5 (87 reviews)</span>
+                        
+                        <div style="background:rgba(255,255,255,0.1);border-radius:var(--radius-lg);padding:1.25rem;text-align:left">
+                            <div class="flex justify-between" style="margin-bottom:0.75rem">
+                                <span>Response Time:</span>
+                                <strong>⚡ Within 1 Hour</strong>
+                            </div>
+                            <div class="flex justify-between" style="margin-bottom:0.75rem">
+                                <span>Experience:</span>
+                                <strong>3+ Years</strong>
+                            </div>
+                            <div class="flex justify-between">
+                                <span>Success Rate:</span>
+                                <strong style="color:#a7f3d0">98% A*-B</strong>
+                            </div>
+                        </div>
+                        
+                        <p style="margin-top:1.5rem;font-size:0.875rem;opacity:0.9">
+                            📍 Rawalpindi/Islamabad • 💻 Worldwide Online
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-16" style="background:var(--white)">
+        <div class="container">
+            <div class="section-title">
+                <h2>Academic <span class="text-gradient">Credentials</span></h2>
+                <div class="section-divider"></div>
+                <p>BS Microbiology and Molecular Genetics | PMAS ARID AGRICULTURE UNIVERSITY RAWALPINDI</p>
+            </div>
+            
+            <div class="grid grid-2" style="gap:2rem">
+                <div class="card">
+                    <h3 style="display:flex;align-items:center;gap:0.75rem;margin-bottom:1.5rem">
+                        <span style="font-size:1.75rem">🌍</span> International Teaching Experience
+                    </h3>
+                    <p style="margin-bottom:1rem;color:var(--gray-600)">
+                        Over 3 years delivering structured biology instruction covering British (GCSE, IGCSE, O Levels, A Levels), 
+                        American High School, and Pakistani National Board curricula.
+                    </p>
+                    <p style="margin-bottom:1.5rem;color:var(--gray-600)">
+                        Students from <strong>United Kingdom, UAE, USA, and Saudi Arabia</strong>. 
+                        Instruction aligned with Cambridge International and Pearson Edexcel mark schemes.
+                    </p>
+                    
+                    <div class="testimonial">
+                        <p>"Mr. Ahsan provided targeted A Level Biology coaching that improved my daughter's grade from C to A*. His academic background ensures conceptual accuracy."</p>
+                        <footer>— Sarah J., Dubai (Parent)</footer>
+                    </div>
+                </div>
+                
+                <div class="card">
+                    <h3 style="margin-bottom:1.5rem">📚 Subjects & Specializations</h3>
+                    <div style="display:grid;gap:0.75rem">
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> GCSE / IGCSE Biology</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> O Level Biology (5090)</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> A Level Biology (9700)</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> Molecular Genetics</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> Microbiology</div>
+                        <div style="display:flex;align-items:center;gap:0.75rem"><span style="color:var(--primary)">✓</span> Human Anatomy & Physiology</div>
+                    </div>
+                    
+                    <hr style="margin:1.5rem 0;border-color:var(--gray-200)">
+                    
+                    <h3 style="margin-bottom:1rem">📍 Service Regions</h3>
+                    <p style="display:flex;align-items:center;gap:0.5rem"><span>📍</span> Rawalpindi / Islamabad (In-Person Available)</p>
+                    <p style="display:flex;align-items:center;gap:0.5rem;margin-top:0.5rem"><span>💻</span> Worldwide via Zoom / Google Meet</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-16" style="background:var(--gray-50)">
+        <div class="container">
+            <div class="section-title">
+                <h2>🔬 Structured <span class="text-gradient">Tutoring Programmes</span></h2>
+                <div class="section-divider"></div>
+                <p>Examination-aligned packages for O Levels, A Levels, and GCSE students</p>
+            </div>
+            
+            <div class="grid grid-3">
+                <div class="card">
+                    <div style="font-size:2.5rem;margin-bottom:1rem">🔬</div>
+                    <h3 style="margin-bottom:0.5rem">GCSE Biology</h3>
+                    <p style="color:var(--gray-600);margin-bottom:1rem">Edexcel | AQA | OCR | IGCSE</p>
+                    <p style="margin-bottom:1rem">Comprehensive revision notes, past paper walkthroughs, and required practicals.</p>
+                    <ul style="list-style:none;margin-bottom:1.5rem">
+                        <li style="padding:0.25rem 0">✓ 1-on-1 Weekly Sessions</li>
+                        <li style="padding:0.25rem 0">✓ Topic-wise Worksheets</li>
+                        <li style="padding:0.25rem 0">✓ Required Practicals Explained</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" style="width:100%">Enquire for GCSE →</a>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size:2.5rem;margin-bottom:1rem">🧬</div>
+                    <h3 style="margin-bottom:0.5rem">A Level Biology</h3>
+                    <p style="color:var(--gray-600);margin-bottom:1rem">Cambridge (9700) | Edexcel</p>
+                    <p style="margin-bottom:1rem">Advanced instruction: essay writing, data analysis, Gene Technology, Respiration.</p>
+                    <ul style="list-style:none;margin-bottom:1.5rem">
+                        <li style="padding:0.25rem 0">✓ A* Strategies & Structure</li>
+                        <li style="padding:0.25rem 0">✓ P5 Planning & Analysis</li>
+                        <li style="padding:0.25rem 0">✓ 6-Month Intensive Bootcamp</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" style="width:100%">Enquire for A Levels →</a>
+                </div>
+                
+                <div class="card">
+                    <div style="font-size:2.5rem;margin-bottom:1rem">🌿</div>
+                    <h3 style="margin-bottom:0.5rem">O Level Biology</h3>
+                    <p style="color:var(--gray-600);margin-bottom:1rem">Cambridge O Level (5090)</p>
+                    <p style="margin-bottom:1rem">Foundation-building: Transport in Plants, Homeostasis, Coordination systems.</p>
+                    <ul style="list-style:none;margin-bottom:1.5rem">
+                        <li style="padding:0.25rem 0">✓ MCQ Drill Sessions</li>
+                        <li style="padding:0.25rem 0">✓ Complete Syllabus Coverage</li>
+                        <li style="padding:0.25rem 0">✓ Progress Tracking Dashboard</li>
+                    </ul>
+                    <a href="#contact" class="btn btn-outline" style="width:100%">Enquire for O Levels →</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Me Section -->
+    <section id="why-choose" class="py-16" style="background:var(--white)">
+        <div class="container">
+            <div class="grid grid-2" style="gap:3rem;align-items:center">
+                <div>
+                    <span class="badge" style="margin-bottom:1rem">Why Choose Me</span>
+                    <h2 style="margin-bottom:2rem">What Makes This <span class="text-gradient">Tutoring Service</span> Different</h2>
+                    
+                    <div style="display:flex;gap:1rem;margin-bottom:1.5rem">
+                        <div style="width:48px;height:48px;background:#d1fae5;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">🎓</div>
+                        <div>
+                            <h3 style="margin-bottom:0.5rem">Verified Academic Background</h3>
+                            <p style="color:var(--gray-600)">BS in Microbiology and Molecular Genetics from PMAS ARID Agriculture University. Instruction grounded in peer-reviewed sciences.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display:flex;gap:1rem;margin-bottom:1.5rem">
+                        <div style="width:48px;height:48px;background:#d1fae5;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">🌍</div>
+                        <div>
+                            <h3 style="margin-bottom:0.5rem">Global Time Zone Compatibility</h3>
+                            <p style="color:var(--gray-600)">Sessions accommodate UK, UAE, US, and Saudi Arabian time zones with recorded archives.</p>
+                        </div>
+                    </div>
+                    
+                    <div style="display:flex;gap:1rem;margin-bottom:1.5rem">
+                        <div style="width:48px;height:48px;background:#d1fae5;border-radius:12px;display:flex;align-items:center;justify-content:center;font-size:1.5rem;flex-shrink:0">📍</div>
+                        <div>
+                            <h3 style="margin-bottom:0.5rem">Local Rawalpindi/Islamabad Presence</h3>
+                            <p style="color:var(--gray-600)">In-person tutoring available for local students requiring face-to-face instruction.</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <div>
+                    <div class="card" style="padding:2rem">
+                        <h3 style="text-align:center;margin-bottom:1.5rem">⭐ Verified Student Outcomes</h3>
+                        
+                        <div class="testimonial" style="margin-bottom:1.5rem">
+                            <p>"Mr. Ahsan's structured approach to Gene Technology clarified complex pathways. I achieved an A in my A Level Biology examination."</p>
+                            <footer>— Hamza A., A Levels Student, Jeddah</footer>
+                        </div>
+                        
+                        <div class="testimonial">
+                            <p>"Online tutoring from Pakistan exceeded expectations. My son's predicted GCSE grade improved from 5 to 8 within four months."</p>
+                            <footer>— Mrs. Khan, Parent of GCSE Student, Manchester</footer>
+                        </div>
+                        
+                        <div style="margin-top:2rem;text-align:center">
+                            <div class="rating-badge" style="font-size:1.125rem;padding:0.5rem 2rem">
+                                ⭐ 5.0/5 • Based on 87 Verified Reviews
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-16" style="background:var(--gray-50)">
+        <div class="container">
+            <div class="contact-cta">
+                <h2 style="margin-bottom:1rem">Ready to Excel in Biology?</h2>
+                <p style="margin-bottom:2rem;font-size:1.125rem;opacity:0.95;max-width:600px;margin-left:auto;margin-right:auto">
+                    Book a complimentary 30-minute diagnostic session to assess syllabus alignment and establish learning objectives.
+                </p>
+                
+                <div class="flex flex-wrap justify-center gap-3" style="margin-bottom:2rem">
+                    <span class="contact-info-badge">📧 ahsanjmalik123@gmail.com</span>
+                    <span class="contact-info-badge">📞 +92 343 8252720</span>
+                </div>
+                
+                <div class="flex flex-wrap justify-center gap-3">
+                    <a href="mailto:ahsanjmalik123@gmail.com" class="btn" style="background:white;color:var(--primary);padding:1rem 2rem">
+                        📅 Schedule Consultation
+                    </a>
+                    <a href="https://wa.me/923438252720" target="_blank" rel="noopener" class="btn btn-whatsapp" style="padding:1rem 2rem">
+                        💬 WhatsApp Now
+                    </a>
+                </div>
+            </div>
+            
+            <div class="card" style="margin-top:2rem;max-width:600px;margin-left:auto;margin-right:auto">
+                <h3 style="text-align:center;margin-bottom:1.5rem">Send an Inquiry</h3>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <input type="text" name="name" placeholder="Your Full Name" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" name="email" placeholder="Your Email Address" required class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <select name="curriculum" required class="form-control">
                             <option value="">Select Curriculum</option>
                             <option value="gcse">GCSE / IGCSE</option>
                             <option value="olevel">O Levels</option>
                             <option value="alevel">A Levels</option>
+                            <option value="other">Other</option>
                         </select>
-                        <input type="text" name="grade" placeholder="Student's Grade/Year" style="padding:12px;border:1px solid #d1d5db;border-radius:8px">
-                        <textarea name="message" placeholder="Describe syllabus requirements..." rows="3" required style="padding:12px;border:1px solid #d1d5db;border-radius:8px"></textarea>
-                        <button type="submit" class="btn btn-primary" style="padding:16px">Send Inquiry</button>
-                    </form>
-                    <p style="text-align:center;font-size:0.75rem;color:#9ca3af;margin-top:16px">Response within 2 hours. GDPR compliant.</p>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <!-- Footer -->
-    <footer class="footer">
-        <div class="container">
-            <p style="font-size:1.25rem;font-weight:600;margin-bottom:8px">Malik Muhammad Ahsan Jahangir Awan</p>
-            <p style="color:#34d399;margin-bottom:16px">BS Microbiology and Molecular Genetics | PMAS ARID AGRICULTURE UNIVERSITY RAWALPINDI</p>
-            <p style="color:#9ca3af;font-size:0.875rem;margin-bottom:24px">© 2026 | Online Biology Tutor | GCSE Biology Teacher | O Level Biology Tutor | A Level Biology Tutor</p>
-            <div>
-                <a href="https://www.linkedin.com/in/malikahsanawan">LinkedIn</a>
-                <a href="https://www.facebook.com/malikahsanawan">Facebook</a>
-                <a href="https://wa.me/923438252720">WhatsApp</a>
+                    </div>
+                    <div class="form-group">
+                        <input type="text" name="grade" placeholder="Student's Grade/Year (Optional)" class="form-control">
+                    </div>
+                    <div class="form-group">
+                        <textarea name="message" placeholder="Describe syllabus requirements, examination board, and specific topics requiring attention..." required class="form-control"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary" style="width:100%;padding:1rem">Send Inquiry →</button>
+                </form>
+                <p style="text-align:center;font-size:0.75rem;color:var(--gray-600);margin-top:1rem">
+                    Response within 2 hours. Your data is secure and GDPR compliant.
+                </p>
             </div>
         </div>
-    </footer>
+    </section>
+</main>
 
-    <!-- Minimal JavaScript (No external libraries) -->
-    <script>
-        // Mobile menu toggle
-        document.getElementById('mobileMenuBtn').addEventListener('click', function(){
-            var menu = document.getElementById('mobileMenu');
-            menu.style.display = menu.style.display === 'none' ? 'block' : 'none';
-        });
+<!-- Footer -->
+<footer class="footer">
+    <div class="container" style="text-align:center">
+        <p style="font-size:1.25rem;font-weight:600;margin-bottom:0.5rem">Malik Muhammad Ahsan Jahangir Awan</p>
+        <p style="color:var(--primary-light);margin-bottom:1rem">BS Microbiology and Molecular Genetics | PMAS ARID AGRICULTURE UNIVERSITY RAWALPINDI</p>
+        
+        <div class="social-links">
+            <a href="https://www.linkedin.com/in/malikahsanawan" target="_blank" rel="noopener">LinkedIn</a>
+            <a href="https://www.facebook.com/malikahsanawan" target="_blank" rel="noopener">Facebook</a>
+            <a href="https://wa.me/923438252720" target="_blank" rel="noopener">WhatsApp</a>
+        </div>
+        
+        <p style="color:var(--gray-400);font-size:0.875rem;margin-top:1.5rem">
+            © 2026 Malik Ahsan Awan. All rights reserved.<br>
+            <span style="font-size:0.75rem">Online Biology Tutor • GCSE Biology Teacher • O Level Biology Tutor • A Level Biology Tutor</span>
+        </p>
+        <p style="margin-top:1rem">
+            <a href="https://malikjeerajajee-coder.github.io/ahsanbiologytutor/sitemap.xml">Sitemap</a> • 
+            <a href="#">Privacy Policy</a>
+        </p>
+    </div>
+</footer>
+
+<!-- Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Malik Muhammad Ahsan Jahangir Awan",
+  "jobTitle": "Online Biology Educator",
+  "description": "Professional online biology tutor specializing in GCSE, O Levels, and A Levels. BS in Microbiology and Molecular Genetics.",
+  "url": "https://malikjeerajajee-coder.github.io/ahsanbiologytutor/",
+  "telephone": "+923438252720",
+  "email": "ahsanjmalik123@gmail.com",
+  "address": {"@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressRegion": "Punjab", "addressCountry": "PK"},
+  "aggregateRating": {"@type": "AggregateRating", "ratingValue": "5.0", "reviewCount": "87", "bestRating": "5"}
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "LocalBusiness",
+  "name": "Malik Ahsan Awan - Biology Tutoring",
+  "image": "https://malikjeerajajee-coder.github.io/ahsanbiologytutor/og-image.svg",
+  "priceRange": "$$",
+  "address": {"@type": "PostalAddress", "addressLocality": "Rawalpindi", "addressRegion": "Punjab", "addressCountry": "PK"},
+  "geo": {"@type": "GeoCoordinates", "latitude": "33.5651", "longitude": "73.0169"},
+  "url": "https://malikjeerajajee-coder.github.io/ahsanbiologytutor/",
+  "telephone": "+923438252720",
+  "areaServed": ["Rawalpindi", "Islamabad", "Pakistan", "United Kingdom", "United Arab Emirates", "United States"]
+}
+</script>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "FAQPage",
+  "mainEntity": [
+    {"@type": "Question", "name": "Do you offer online tutoring for GCSE Biology?", "acceptedAnswer": {"@type": "Answer", "text": "Yes. I provide structured GCSE Biology tutoring for Edexcel, AQA, and OCR. Over 50 students achieved A* grades."}},
+    {"@type": "Question", "name": "What is your student success rate?", "acceptedAnswer": {"@type": "Answer", "text": "98% of students achieve A* to B grades. Based on verified exam results 2023-2025."}},
+    {"@type": "Question", "name": "Where are you located?", "acceptedAnswer": {"@type": "Answer", "text": "Based in Rawalpindi, Pakistan. I offer online tutoring worldwide and limited in-person sessions in Rawalpindi/Islamabad."}}
+  ]
+}
+</script>
+
+<!-- Minimal JavaScript -->
+<script>
+    (function(){
+        "use strict";
+        
+        // Mobile menu
+        var hamburger = document.getElementById('hamburger');
+        var mobileMenu = document.getElementById('mobileMenu');
+        if(hamburger && mobileMenu){
+            hamburger.addEventListener('click', function(){
+                mobileMenu.classList.toggle('active');
+                this.textContent = mobileMenu.classList.contains('active') ? '✕' : '☰';
+            });
+        }
         
         // Smooth scroll
         document.querySelectorAll('a[href^="#"]').forEach(function(anchor){
             anchor.addEventListener('click', function(e){
                 var href = this.getAttribute('href');
-                if(href !== '#' && href !== '#home'){
+                if(href === '#' || href === '#home'){
                     e.preventDefault();
+                    window.scrollTo({top:0,behavior:'smooth'});
+                }else if(href !== '#'){
                     var target = document.querySelector(href);
-                    if(target) target.scrollIntoView({behavior:'smooth'});
+                    if(target){
+                        e.preventDefault();
+                        target.scrollIntoView({behavior:'smooth',block:'start'});
+                        if(mobileMenu) mobileMenu.classList.remove('active');
+                        if(hamburger) hamburger.textContent = '☰';
+                    }
                 }
             });
         });
         
+        // Active nav highlight
+        var sections = document.querySelectorAll('section[id]');
+        var navLinks = document.querySelectorAll('.nav-links a, .mobile-menu a');
+        
+        function highlightNav(){
+            var scrollY = window.pageYOffset;
+            sections.forEach(function(section){
+                var sectionHeight = section.offsetHeight;
+                var sectionTop = section.offsetTop - 100;
+                var sectionId = section.getAttribute('id');
+                if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
+                    navLinks.forEach(function(link){
+                        link.classList.remove('active');
+                        if(link.getAttribute('href') === '#' + sectionId){
+                            link.classList.add('active');
+                        }
+                    });
+                }
+            });
+        }
+        window.addEventListener('scroll', highlightNav);
+        
         // Form submit
-        document.getElementById('contactForm').addEventListener('submit', function(e){
-            e.preventDefault();
-            alert('Inquiry received! Response within 2 hours.');
-            this.reset();
+        var form = document.getElementById('contactForm');
+        if(form){
+            form.addEventListener('submit', function(e){
+                e.preventDefault();
+                alert('✅ Inquiry received! I will respond within 2 hours.\n\nThank you for choosing Malik Ahsan Awan - Biology Tutoring.');
+                this.reset();
+            });
+        }
+        
+        // Lazy load animation on scroll
+        var animatedElements = document.querySelectorAll('.animate');
+        var observer = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+                if(entry.isIntersecting){
+                    entry.target.style.opacity = '1';
+                    entry.target.style.transform = 'translateY(0)';
+                }
+            });
+        }, {threshold:0.1});
+        
+        animatedElements.forEach(function(el){
+            el.style.opacity = '0';
+            el.style.transform = 'translateY(20px)';
+            el.style.transition = 'opacity 0.5s, transform 0.5s';
+            observer.observe(el);
         });
         
-        // Lazy load non-critical CSS
-        var stylesheet = document.createElement('link');
-        stylesheet.rel = 'stylesheet';
-        stylesheet.href = 'styles.css';
-        document.head.appendChild(stylesheet);
-    </script>
+        // Animate stats numbers
+        var statNumbers = document.querySelectorAll('.stat-number');
+        var statObserver = new IntersectionObserver(function(entries){
+            entries.forEach(function(entry){
+                if(entry.isIntersecting){
+                    var el = entry.target;
+                    var target = parseInt(el.textContent) || 0;
+                    var suffix = el.textContent.includes('%') ? '%' : (el.textContent.includes('+') ? '+' : '');
+                    var count = 0;
+                    var duration = 1500;
+                    var step = target / (duration / 16);
+                    var timer = setInterval(function(){
+                        count += step;
+                        if(count >= target){
+                            el.textContent = target + suffix;
+                            clearInterval(timer);
+                        }else{
+                            el.textContent = Math.floor(count) + suffix;
+                        }
+                    }, 16);
+                    statObserver.unobserve(el);
+                }
+            });
+        }, {threshold:0.5});
+        statNumbers.forEach(function(el){statObserver.observe(el)});
+        
+    })();
+</script>
+
+<!-- Google Analytics (Optional - Add your ID) -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+
 </body>
 </html>
