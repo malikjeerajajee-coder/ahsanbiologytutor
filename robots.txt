@@ -1,9 +1,9 @@
-# robots.txt for Malik Ahsan Awan Biology Tutoring
-# https://malikjeerajajee-coder.github.io/ahsanbiologytutor/
-# Last updated: 2026-04-16
-
 User-agent: *
 Allow: /
+Disallow: /private/
 
-# Sitemap location
+# ⚡ CRITICAL: Point to BOTH sitemap formats for maximum compatibility
 Sitemap: https://malikjeerajajee-coder.github.io/ahsanbiologytutor/sitemap.xml
+Sitemap: https://malikjeerajajee-coder.github.io/ahsanbiologytutor/sitemap.html
+
+# Crawl-delay: 10 (Uncomment if you ever get rate-limited)
